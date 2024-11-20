@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+  }
+  /* Dark mode support */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+  }
+  
+  .dark {
+    --bg-color: #1a202c;
+    --text-color: #e2e8f0;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  

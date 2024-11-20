@@ -1,0 +1,70 @@
+#get users
+###
+GET http://localhost:5000/users
+
+
+#create user
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "steph curry",
+    "email": "steph@gmail.com",
+    "password": "password"
+}
+
+#clear db
+###
+DELETE http://localhost:5000/users
+
+# login user
+###
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "email": "lebron@gmail.com",
+    "password": "password"
+}
+
+# logout user
+###
+GET http://localhost:5000/users/logout
+
+#get profile
+###
+GET http://localhost:5000/users/profile
+
+
+
+
+#get all account details
+###
+GET http://localhost:5000/accounts
+
+# delete accounts
+###
+DELETE http://localhost:5000/accounts
+
+
+
+# make transfer
+###
+POST http://localhost:5000/transfer
+Content-Type: application/json
+
+{
+    "name": "kofi arhin",
+    "accountNumber": 17043826,
+    "amount": 100
+}
+
+
+# get transfers
+###
+GET http://localhost:5000/transfer
+
+# delete transfers - clear database for transfers
+###
+# DELETE http://localhost:5000/transfer
